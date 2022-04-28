@@ -1,0 +1,8 @@
+{
+  "name": "oupe-moodle-dev-test-env",
+  "version": "0.0.1",
+  "description": "Development and testing environment including a dockerized Moodle instance and all set-up required to run automated tests.",
+  "main": "index.js",
+  "author": "Carlos Bermejo Pérez",
+  "license": "MIT"
+}
