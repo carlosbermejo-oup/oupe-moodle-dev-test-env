@@ -13,6 +13,7 @@ services:
       - 'mariadb_data:/bitnami/mariadb'
     ports:
       - "3306:3306"
+    restart: unless-stopped
   moodle:
     image: docker.io/bitnami/moodle:3
     ports:
@@ -30,6 +31,7 @@ services:
       - 'moodledata_data:/bitnami/moodledata'
     depends_on:
       - mariadb
+    restart: unless-stopped
 volumes:
   mariadb_data:
     driver: local

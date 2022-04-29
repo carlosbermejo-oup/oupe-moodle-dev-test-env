@@ -1,0 +1,11 @@
+certifi
+chardet
+Django>=3.2.0,<3.3
+idna
+lti
+lxml
+oauthlib
+pytz
+requests
+requests-oauthlib
+urllib3
