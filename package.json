@@ -4,5 +4,8 @@
   "description": "Development and testing environment including a dockerized Moodle instance and all set-up required to run automated tests.",
   "main": "index.js",
   "author": "Carlos Bermejo Pérez",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "db:default": "docker exec -i oupe-moodle-dev-test-env-mariadb-1 mysql -u root bitnami_moodle < db_scripts/dump-moodle-configured-default.sql"
+  }
 }
